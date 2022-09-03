@@ -1,22 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App.js";
 
-class Navbar extends React.Component {
-  
-  render() {
-    return(
-      <nav>
-        <h2>Ham</h2>
-        <h1>Overtime Kicks</h1>
-        <ul>
-          <li> Search </li>
-          <li> Cart </li>
-        </ul>
-      </nav>
-    );
-  }
-}
-
-
-ReactDOM.render(<Navbar /> , document.getElementById("root"));
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
